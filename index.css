@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightgray: hsl(212, 45%, 89%);
+    --grayishblue: hsl(220, 15%, 55%);
+    --darkblue: hsl(218, 44%, 22%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--lightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#qr-card {
+    background-color: var(--white);
+    /* margin: 2.1rem; */
+    width: 300px;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.qr-code-frame {
+    width: 100%;
+}
+
+#qr-code-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#qr-card h1 {
+    font-size: 1.3rem;
+    color: var(--darkblue);
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.1rem;
+}
+
+#qr-card p {
+    text-align: center;
+    color: var(--grayishblue);
+    padding: 0 10px;
+    margin-bottom: 1.4rem;
+}
+
+footer {
+    margin: 0.5rem 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
